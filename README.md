@@ -1,7 +1,3 @@
-### Date created
-
-01.4.2023
-
 ### Bikeshare Data Analysis
 
 ### Description
@@ -46,3 +42,7 @@ The supported Python version is 3.10.8 and using miniconda is recomended.
 + <https://stackoverflow.com>
 + <https://marketplace.visualstudio.com/items?itemName=codezombiech.gitignore>
 + <https://citibikenyc.com/system-data>
+
+### Date created
+
+01.4.2023
