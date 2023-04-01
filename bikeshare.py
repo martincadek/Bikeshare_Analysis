@@ -1,4 +1,5 @@
 # Required packages
+import autopep8
 import time
 import pandas as pd
 import numpy as np
@@ -325,7 +326,7 @@ def view_raw_data(df,
 
     start_loc = 0
 
-    while(user_input == 'yes'):
+    while (user_input == 'yes'):
         print('-'*40)
         print(df.iloc[start_loc:start_loc+5])
         start_loc += 5
