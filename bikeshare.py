@@ -242,7 +242,7 @@ def trip_duration_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-
+# The following function displays statistics on bikeshare users.
 def user_stats(df, city):
     """
     Displays statistics on bikeshare users.
@@ -296,7 +296,8 @@ def user_stats(df, city):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-
+# The following function is used to display 5 rows of raw data on bikeshare users based on user prompt.
+# This function was added based on reviewer comments.
 def view_raw_data(df,
                   prompt='Would you like to view 5 rows of individual trip data? Enter "yes" or "no"\n',
                   valid_entries=['yes', 'no']):
