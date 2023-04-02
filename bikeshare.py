@@ -7,11 +7,11 @@ import sys
 import warnings
 import datetime
 
-CITY_DATA = {'chicago': 'chicago.csv',
-             'new york city': 'new_york_city.csv',
-             'washington': 'washington.csv'}
+CITY_DATA = {'chicago': 'data/chicago.csv',
+             'new york city': 'data/new_york_city.csv',
+             'washington': 'data/washington.csv'}
 
-
+# The function below is used to get user input for city, month, and day.
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
@@ -91,7 +91,7 @@ def get_filters():
         print('-'*40)
         return city, month, day
 
-
+# The function below is used to load data from the csv files.
 def load_data(city, month, day):
     """
     Loads data for the specified city and filters by month and day if applicable.
@@ -147,7 +147,7 @@ def load_data(city, month, day):
 
     return df
 
-
+# The following function is used to display the most common month, day of week and hour of day.
 def time_stats(df):
     """
     Displays statistics on the most frequent times of travel.
@@ -187,7 +187,7 @@ def time_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-
+# The function display and print the most popular stations and trip.
 def station_stats(df):
     """Displays statistics on the most popular stations and trip."""
 
@@ -209,7 +209,7 @@ def station_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-
+# The following function shows duration statistics.
 def trip_duration_stats(df):
     """
     Displays statistics on the total and average trip duration.
@@ -243,7 +243,7 @@ def trip_duration_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-
+# The following function displays statistics on bikeshare users.
 def user_stats(df, city):
     """
     Displays statistics on bikeshare users.
@@ -297,7 +297,8 @@ def user_stats(df, city):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-
+# The following function is used to display 5 rows of raw data on bikeshare users based on user prompt.
+# This function was added based on reviewer comments.
 def view_raw_data(df,
                   prompt='Would you like to view 5 rows of individual trip data? Enter "yes" or "no"\n',
                   valid_entries=['yes', 'no']):
