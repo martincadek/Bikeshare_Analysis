@@ -6,9 +6,9 @@ import sys
 import warnings
 import datetime
 
-CITY_DATA = {'chicago': 'chicago.csv',
-             'new york city': 'new_york_city.csv',
-             'washington': 'washington.csv'}
+CITY_DATA = {'chicago': 'data/chicago.csv',
+             'new york city': 'data/new_york_city.csv',
+             'washington': 'data/washington.csv'}
 
 # The function below is used to get user input for city, month, and day.
 def get_filters():
